@@ -1,9 +1,13 @@
 import React from 'react';
 import './App.css';
 import tasks from './sample/task.json';
+
+
 //componentes
+
 import Tasks from './components/Tasks';
 import TaskForm from './components/TaskForm';
+import Posts from './components/Posts'
 
 class App extends React.Component {
 
@@ -43,7 +47,9 @@ class App extends React.Component {
       <Tasks 
         tasks={this.state.tasks} 
         deleteTask={this.deleteTask} 
-        checkDone={this.checkDone}/>
+        checkDone={this.checkDone}
+        />
+      <Posts />  
     </div>
   }
 }
